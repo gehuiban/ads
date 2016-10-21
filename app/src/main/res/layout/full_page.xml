@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/primary_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/padding_half"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:scaleType="centerCrop"
+            android:transitionName="primary_image"
+            tools:background="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:text="Kmart" />
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/darker_gray"
+            tools:text="Description" />
+
+        <TextView
+            android:id="@+id/call_to_action_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_half"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:text="Install Now" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Rating" />
+
+            <ImageView
+                android:id="@+id/rate_image"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitStart"
+                tools:background="@android:color/holo_green_dark" />
+
+            <TextView
+                android:id="@+id/rate_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:textSize="10dp"
+                tools:text="4.5 - 1000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="App Id" />
+            <TextView
+                android:id="@+id/app_id_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="com.kmart.android" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Product Id" />
+            <TextView
+                android:id="@+id/product_id_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="11865" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Category Name" />
+            <TextView
+                android:id="@+id/category_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Shopping" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Creative Id" />
+            <TextView
+                android:id="@+id/creative_id_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="400635" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Campaign Display Order"/>
+            <TextView
+                android:id="@+id/campaign_display_order_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Campaign Id" />
+            <TextView
+                android:id="@+id/campaign_id_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="43634" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Campaign Type Id"/>
+            <TextView
+                android:id="@+id/campaign_type_id_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Home Screen" />
+            <TextView
+                android:id="@+id/home_screen_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Is Random Pick" />
+            <TextView
+                android:id="@+id/is_random_pick_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Min OS Version"/>
+            <TextView
+                android:id="@+id/min_os_version_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Android 4.0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ListHeader"
+                android:text="Bid Rate" />
+            <TextView
+                android:id="@+id/bid_rate_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="0.87" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
